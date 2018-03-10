@@ -52,8 +52,12 @@ driver.get('https://www.facebook.com/')
 
 
 #--------------- Entering user details on Facebook Welcome page --------------
-username_box = driver.find_element_by_id('email')
-username_box.send_keys(usr)
+try:
+    username_box = driver.find_element_by_id('email')
+    username_box.send_keys(usr)
+except:
+    print('Error: You might already be logged in\nFirst logout from Facebook\n')
+    sys.exit()
 
 pass_box = driver.find_element_by_id('pass')
 pass_box.send_keys(pwd)
