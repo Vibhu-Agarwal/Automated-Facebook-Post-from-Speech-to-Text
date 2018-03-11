@@ -11,8 +11,8 @@ import sys
 
 
 #--------------------- Email ID and password of Facebook ---------------------
-usr = input('Enter email ID: ')
-pwd = getpass()
+usr = input('Enter email ID: ') #Hardcode the username here eg. 'abcd.efg@gmail.com'
+pwd = getpass() #Hardcode the password here 'securepassword123'
 #-----------------------------------------------------------------------------
 
 
